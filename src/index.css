@@ -32,11 +32,22 @@ body {
   margin-bottom: 30px;
   border-bottom: 1px solid #e9ecef;
   padding-bottom: 15px;
+  background: linear-gradient(to right, var(--primary-dark), var(--primary-color));
+  margin: -20px -20px 30px -20px;
+  padding: 30px 40px;
+  color: white;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .dashboard-header h1 {
-  color: var(--primary-dark);
+  color: white;
   font-weight: 700;
+}
+
+.dashboard-header p {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 1.1rem;
 }
 
 .chart-container {
@@ -73,6 +84,7 @@ body {
 
 .data-upload:hover {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
 }
 
 .card-title {
@@ -133,4 +145,15 @@ body {
 /* Animation for hover effects */
 .btn, .card, .form-control, .form-select {
   transition: all 0.3s ease;
+}
+
+/* Welcome screen styles */
+.welcome-container {
+  margin: 20px 0 40px;
+}
+
+.welcome-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
